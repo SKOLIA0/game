@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @playermatchstate %>
+
+<div>
+  <%= link_to "Edit this playermatchstate", edit_playermatchstate_path(@playermatchstate) %> |
+  <%= link_to "Back to playermatchstates", playermatchstates_path %>
+
+  <%= button_to "Destroy this playermatchstate", @playermatchstate, method: :delete %>
+</div>

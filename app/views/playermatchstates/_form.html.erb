@@ -1,0 +1,17 @@
+<%= form_with(model: playermatchstate) do |form| %>
+  <% if playermatchstate.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(playermatchstate.errors.count, "error") %> prohibited this playermatchstate from being saved:</h2>
+
+      <ul>
+        <% playermatchstate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @team_participation %>
+
+<div>
+  <%= link_to "Edit this team participation", edit_team_participation_path(@team_participation) %> |
+  <%= link_to "Back to team participations", team_participations_path %>
+
+  <%= button_to "Destroy this team participation", @team_participation, method: :delete %>
+</div>
